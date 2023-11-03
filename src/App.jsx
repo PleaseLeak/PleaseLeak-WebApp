@@ -43,7 +43,6 @@ const queryClient = new QueryClient({
 document.getElementById("website-loader").style.display = "none";
 document.body.style.display = "block";
 const baseUrl = import.meta.env.BASE_URL;
-console.log(baseUrl);
 function App() {
   return (
     <>
