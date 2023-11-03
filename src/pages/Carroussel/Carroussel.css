@@ -1,0 +1,67 @@
+.carroussel .left-button,
+.right-button {
+  height: 70vh;
+  width: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 2.5em;
+  padding: 15px;
+  color: pink;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carroussel .right-button {
+  justify-content: end;
+}
+
+.control {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  @keyframes image-start {
+    0% {
+      filter: brightness(0.8);
+      transform: translateX(130px) scale(0.95);
+      border-radius: 20px;
+    }
+    100% {
+      filter: brightness(1);
+      transform: translateX(0px) scale(1);
+    }
+  }
+  @keyframes image-start-left {
+    0% {
+      filter: brightness(0.8);
+      transform: translateX(-130px) scale(0.95);
+    }
+    100% {
+      filter: brightness(1);
+      transform: translateX(0px) scale(1);
+      border-radius: 20px;
+    }
+  }
+
+  .carroussel-image {
+    z-index: 0;
+    min-height: 75vh;
+    max-width: 98.5vw;
+    max-height: 85vh;
+
+    animation: image-start 0.6s;
+  }
+  .carroussel-image-left {
+    z-index: 0;
+    max-width: 98.5vw;
+    max-height: 85vh;
+    min-height: 75vh;
+
+    animation: image-start-left 0.6s;
+  }
+}

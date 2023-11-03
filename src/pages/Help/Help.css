@@ -1,0 +1,18 @@
+@keyframes request-form {
+  0% {
+    transform: scale(50%);
+  }
+}
+@keyframes request-form1 {
+  0% {
+    transform: scale(50%);
+  }
+}
+
+.request-form {
+  animation: request-form 0.5s;
+}
+
+.request-form1 {
+  animation: request-form1 0.5s;
+}
