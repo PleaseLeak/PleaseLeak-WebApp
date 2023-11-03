@@ -46,6 +46,7 @@ const GeneratePage = () => {
     location: useRef(),
     haircut: useRef(),
     aspectRatio: useRef(),
+    age: useRef(),
   };
 
   const configShema = [
@@ -69,6 +70,10 @@ const GeneratePage = () => {
         {
           name: "Semi Realistic",
           value: "semi-realistic",
+        },
+        {
+          name: "Realistic",
+          value: "realistic",
         },
       ],
     },
@@ -529,6 +534,32 @@ const GeneratePage = () => {
         {
           name: "3:2",
           value: "3:2",
+        },
+      ],
+    },
+    {
+      name: "Age",
+      ref: refs.age,
+      values: [
+        {
+          name: "Teen",
+          value: "teen",
+        },
+        {
+          name: "Young",
+          value: "young",
+        },
+        {
+          name: "Mature",
+          value: "mature",
+        },
+        {
+          name: "Old",
+          value: "old",
+        },
+        {
+          name: "middle-aged",
+          value: "middle-aged",
         },
       ],
     },
